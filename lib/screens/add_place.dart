@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:geo_gallary/widgets/image_input.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:geo_gallary/providers/user_places.dart';
 
@@ -45,6 +46,10 @@ class _AddPlaceScreenState extends ConsumerState<AddPlaceScreen> {
                   color: Theme.of(context).colorScheme.onSurface,
                 ),
               ),
+              const SizedBox(
+                height: 10,
+              ),
+              ImageInput(),
               const SizedBox(
                 height: 16,
               ),
